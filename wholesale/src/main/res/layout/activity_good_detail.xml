@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_good_detail">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/dp_49"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layout_banner"
+                layout="@layout/item_detail_banner"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10">
+
+                <ImageView
+                    android:id="@+id/back_good_detail"
+                    android:layout_width="@dimen/dp_32"
+                    android:layout_height="@dimen/dp_32"
+                    android:padding="@dimen/dp_5"
+                    android:src="@mipmap/all_nav_icon_back_white"
+                    android:background="@drawable/black_radius"/>
+
+                <LinearLayout
+                    android:id="@+id/goods_car_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dp_5">
+
+                    <com.yunmayi.app.baselibrary.common.BottomBarView
+                        android:id="@+id/goods_car"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/black_radius"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/good_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout_banner"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10">
+
+                    <TextView
+                        android:id="@+id/good_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/btn_price_color"
+                        android:textSize="@dimen/sp_24"
+                        android:text="¥68.00"/>
+
+                    <TextView
+                        android:id="@+id/goods_spec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/good_price"
+                        android:text="/箱"
+                        android:textColor="@color/text_color_5"
+                        android:textSize="@dimen/sp_14" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_24"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/productdetail_icon_collect_normal" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="伊利无菌砖纯牛奶250ml*24盒，常温营养早餐牛奶，健康早餐之选"
+                    android:textColor="@color/text_color_1"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textSize="@dimen/sp_16"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_15"
+                    android:paddingTop="@dimen/sp_10"
+                    android:text="生产日期18年3月，保质期12个月，到19年3月"
+                    android:textColor="@color/text_color_5"
+                    android:textSize="@dimen/sp_12" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_10"
+                    android:background="@color/bg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商品规格"
+                    android:layout_margin="@dimen/dp_10"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/goods_spec_title"
+                            android:layout_width="42dp"
+                            android:layout_height="17dp"
+                            android:text="单位："
+                            android:textColor="#ffafafb3"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/goods_spec_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/goods_spec_title"
+                            android:text="箱"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="@dimen/sp_14" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/whole_box_spec"
+                            android:layout_width="42dp"
+                            android:layout_height="17dp"
+                            android:text="整箱："
+                            android:textColor="#ffafafb3"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/spec_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/whole_box_spec"
+                            android:text="24瓶"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="@dimen/sp_14" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/goods_brand_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="品牌："
+                            android:textColor="#ffafafb3"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/goods_brand_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/goods_brand_title"
+                            android:text="百事"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="@dimen/sp_14" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/good_guarantee_date_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="保质期："
+                            android:textColor="#ffafafb3"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/good_guarantee_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/good_guarantee_date_title"
+                            android:text="1年"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="@dimen/sp_14" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/goods_standard_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="规格："
+                            android:textColor="#ffafafb3"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/goods_standard_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/goods_standard_title"
+                            android:text="250ml*24盒"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="@dimen/sp_14" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/goods_retail_price_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="建议零售价："
+                            android:textColor="#ffafafb3"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/goods_retail_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/goods_retail_price_title"
+                            android:text="24瓶"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="@dimen/sp_14" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/car_button_bg"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_49"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_item_shopcart_cloth_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/minu_goods_bg"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/icon_not_clickable_state2"/>
+
+            <EditText
+                android:id="@+id/et_item_shopcart_cloth_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_color_1"
+                android:gravity="center"
+                android:background="@null"
+                android:maxLength="4"
+                android:inputType="number"
+                android:paddingLeft="@dimen/dp_30"
+                android:paddingRight="@dimen/dp_30"
+                android:textSize="@dimen/sp_20"
+                android:text="1" />
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/icon_not_clickable_state2"/>
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_49"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_item_shopcart_cloth_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add_goods_bg"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_shopcart_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:text="加入购物车" />
+
+    </LinearLayout>
+
+</RelativeLayout>

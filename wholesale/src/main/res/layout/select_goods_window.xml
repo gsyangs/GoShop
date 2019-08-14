@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/add_popupwindow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll_popup"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_menu"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/supplier_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_16">
+
+            <ImageView
+                android:id="@+id/good_image"
+                android:layout_width="@dimen/dp_90"
+                android:layout_height="@dimen/dp_90"
+                android:src="@mipmap/cart_icon_sad"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/good_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:text="特仑苏低脂纯牛奶250ml*12盒"
+                    android:textColor="@color/text_color_1"
+                    android:maxHeight="@dimen/dp_35"
+                    android:textSize="@dimen/sp_14"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="¥"
+                            android:textColor="@color/btn_price_color"
+                            android:textSize="@dimen/sp_14"/>
+
+                        <TextView
+                            android:id="@+id/good_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/btn_price_color"
+                            android:textSize="@dimen/sp_20"
+                            android:text="68.88"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_12"
+                            android:textColor="@color/text_color_5"
+                            android:text="/箱"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/spec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/sp_12"
+                        android:gravity="right"
+                        android:textColor="@color/text_color_5"
+                        android:text="规格：250ml*24盒"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/buy_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="@dimen/sp_12"
+                    android:textColor="@color/text_color_5"
+                    android:text="限购10箱"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_6"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/text_color_1"
+                android:text="购买数量"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/decrease_btn"
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:src="@mipmap/car_all_btn_decrease_disabled"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:maxLength="4"
+                    android:inputType="number"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/text_color_1"
+                    android:paddingLeft="@dimen/dp_15"
+                    android:paddingRight="@dimen/dp_15"
+                    android:background="@drawable/car_text_bg"/>
+
+                <ImageView
+                    android:id="@+id/add_btn"
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:src="@mipmap/car_all_btn_add_disabled"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_30"
+            android:paddingTop="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_15">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:text="+5"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:text="+10"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:text="+15"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

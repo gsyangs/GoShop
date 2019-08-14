@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/one_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:layout_weight="3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center"
+            android:padding="@dimen/dp_10">
+
+            <View
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginRight="@dimen/dp_3"
+                android:background="@color/icon_not_clickable_state2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="类目"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/tablayout_text_color"/>
+
+            <View
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:background="@color/icon_not_clickable_state2"/>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tow_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center"
+            android:background="@color/white"
+            android:padding="@dimen/dp_10">
+
+            <View
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginRight="@dimen/dp_3"
+                android:background="@color/icon_not_clickable_state2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="品牌"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/tablayout_text_color"/>
+
+            <View
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:background="@color/icon_not_clickable_state2"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/brand_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+</LinearLayout>

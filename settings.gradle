@@ -1,0 +1,1 @@
+include ':app', ':wholesale', ':smallshop', ':shoppingmall', ':usercenter', ':service', ':bo', ':baselibrary'

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Yunmayi.iml" filepath="$PROJECT_DIR$/Yunmayi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baselibrary/baselibrary.iml" filepath="$PROJECT_DIR$/baselibrary/baselibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bo/bo.iml" filepath="$PROJECT_DIR$/bo/bo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shoppingmall/shoppingmall.iml" filepath="$PROJECT_DIR$/shoppingmall/shoppingmall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smallshop/smallshop.iml" filepath="$PROJECT_DIR$/smallshop/smallshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usercenter/usercenter.iml" filepath="$PROJECT_DIR$/usercenter/usercenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wholesale/wholesale.iml" filepath="$PROJECT_DIR$/wholesale/wholesale.iml" />
+    </modules>
+  </component>
+</project>

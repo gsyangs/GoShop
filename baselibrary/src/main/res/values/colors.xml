@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e62d2d</color>
+    <color name="colorPrimaryDark">#e62d2d</color>
+    <color name="colorAccent">#e62d2d</color>
+    <color name="bg_transparent">#00000000</color>
+    <!--价格 选中 功能按钮-->
+    <color name="btn_price_color">#e62d2d</color>
+    <!--用于完善状态，重要信息提醒-->
+    <color name="important_information">#24b36b</color>
+    <!--用于次要面性按钮-->
+    <color name="default_status_secondary_icons">#ffb319</color>
+    <!--用于重要图标默认状态-->
+    <color name="default_status_important_icons">#969699</color>
+    <!--用于一半的线性图标和按钮-->
+    <color name="bg_line">#c3c3c7</color>
+    <!--用户图标不可点击状态-->
+    <color name="icon_not_clickable_state1">#dbdbdb</color>
+    <!--用于图标不可点击状态-->
+    <color name="icon_not_clickable_state2">#ebebeb</color>
+    <!--用于最底层背景色-->
+    <color name="bg">#f5f5f5</color>
+    <!--白色-->
+    <color name="white">#ffffff</color>
+    <!--一般字色号-->
+    <color name="text_color_0">#000000</color>
+    <color name="text_color_1">#333333</color>
+    <color name="text_color_3">#646466</color>
+    <color name="text_color_4">#999999</color>
+    <color name="text_color_5">#afafb3</color>
+    <color name="tablayout_text_color">#7d7d80</color>
+    <color name="take_btn_color">#007aff</color>
+    <color name="start_color">#ff6699</color>
+    <color name="end_color">#ff8066</color>
+</resources>

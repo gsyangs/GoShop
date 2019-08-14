@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginLeft="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/back_good_detail"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/dp_5"
+        android:src="@mipmap/search_nav_icon_back" />
+
+    <EditText
+        android:id="@+id/keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/text_color_3"
+        android:textSize="@dimen/sp_14"
+        android:layout_toLeftOf="@+id/goods_search"
+        android:layout_toRightOf="@+id/back_good_detail"
+        android:background="@drawable/search_bg"
+        android:hint="输入商品名称或品牌"/>
+
+    <TextView
+        android:id="@+id/goods_search"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_32"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dp_5"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/sp_16"
+        android:layout_alignParentRight="true"
+        android:text="搜索"/>
+
+</RelativeLayout>
